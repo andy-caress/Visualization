@@ -23,7 +23,7 @@ function setup() {
 }
 
 function draw() {
-  background(51);
+  background(0, 0, 0);
 
   angle = angleSlider.value();
   coef = coefSlider.value();
@@ -32,20 +32,20 @@ function draw() {
   steps = stepsSlider.value();
 
   stroke(0);
-  fill(255);
-  text("angle (" + round(degrees(angleSlider.value())) + ")", 165, height-155);
-  text("coeficient (" + coefSlider.value() + ")", 165, height-120);
-  text("length (" + lSlider.value() + ")", 165, height-85);
-  text("branches (" + branchesSlider.value() + ")", 165, height-50);
-  text("steps (" + stepsSlider.value() + ")", 165, height-15);
+  fill(255, 0, 0);
+  text("angle (" + round(degrees(angleSlider.value())) + ")", 50, height-155);
+  text("coeficient (" + coefSlider.value() + ")", 50, height-120);
+  text("length (" + lSlider.value() + ")", 50, height-85);
+  text("branches (" + branchesSlider.value() + ")", 50, height-50);
+  text("steps (" + stepsSlider.value() + ")", 50, height-15);
 
-  stroke(255);
-  translate(width/2, height-200);
+  stroke(255, 0, 0);
+  translate(width/2, height-150);
   branch(l, steps);
 }
 
 function branch(len, s) {
-  line(0, 0, 0, -len);
+  line(0, 50, 0, -len);
   translate(0, -len);
 
   if(s > 0) {
