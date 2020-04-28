@@ -11,15 +11,15 @@ function setup() {
   textSize(20);
 
   angleSlider = createSlider(0, 3.1415926536, 0.7853981634, 0.05); // from 0 to PI
-  angleSlider.position(20, height-175);
+  angleSlider.position(20, height-185);
   coefSlider = createSlider(0, 0.75, 0.5, 0.05);
-  coefSlider.position(20, height-140);
+  coefSlider.position(20, height-150);
   lSlider = createSlider(50, 450, 300, 50);
-  lSlider.position(20, height-105);
+  lSlider.position(20, height-115);
   branchesSlider = createSlider(1, 3, 1, 1);
-  branchesSlider.position(20, height-70);
+  branchesSlider.position(20, height-80);
   stepsSlider = createSlider(1, 10, 6, 1);
-  stepsSlider.position(20, height-35);
+  stepsSlider.position(20, height-45);
 }
 
 function draw() {
