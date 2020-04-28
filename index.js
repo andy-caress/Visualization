@@ -1,6 +1,3 @@
-var myCanvas = createCanvas(windowWidth, windowHeight);
-    myCanvas.parent("container");
-
 var angle = 0.7853981634; // PI/4
 var coef = 0.5;
 var l = 300;
